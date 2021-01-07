@@ -1,9 +1,15 @@
 import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { push } from 'react-router-redux';
 import PropTypes from 'prop-types';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 
 const PanelDummy = ({ id }) => {
-    useEffect(() => {}, []);
+	const dispatch = useDispatch();
+
+    useEffect(() => {
+		dispatch(push('/'));
+	}, []);
 
     return <Panel id={id} />;
 };
