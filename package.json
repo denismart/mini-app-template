@@ -40,9 +40,9 @@
 		"stylelint-selector-bem-pattern": "^2.1.0"
 	},
 	"dependencies": {
-		"@vkontakte/icons": "^1.59.0",
+		"@vkontakte/icons": "^1.69.0",
 		"@vkontakte/vk-bridge": "^2.3.0",
-		"@vkontakte/vkui": "^3.13.2",
+		"@vkontakte/vkui": "^4.0.3",
 		"axios": "^0.21.0",
 		"core-js": "^3.3.6",
 		"eruda": "^2.4.1",
