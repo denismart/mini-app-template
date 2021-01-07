@@ -1,0 +1,1 @@
+export const VK_SET_ACCESS_TOKEN = 'VK_SET_ACCESS_TOKEN';
