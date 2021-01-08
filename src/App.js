@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import '@vkontakte/vkui/dist/vkui.css';
+import AppRoot from '@vkontakte/vkui/dist/components/AppRoot/AppRoot';
 import View from '@vkontakte/vkui/dist/components/View/View';
 import routing from './js/classes/routing';
 import PanelDummy from './js/containers/PanelDummy';
@@ -18,9 +19,11 @@ const App = ({ pageId }) => {
 
     return (
         <ConfigProvider isWebView transitionMotionEnabled={isPanelAnimation}>
-            <View id="view-main" activePanel={activePanel}>
-                <PanelDummy id="panel-dummy" />
-            </View>
+			<AppRoot>
+				<View id="view-main" activePanel={activePanel}>
+					<PanelDummy id="panel-dummy" />
+				</View>
+			</AppRoot>
         </ConfigProvider>
     );
 };
