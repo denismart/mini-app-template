@@ -10,7 +10,8 @@
 		"build:dev": "cross-env-file -p ./.env.dev.json react-scripts build",
 		"deploy": "vk-miniapps-deploy",
 		"tunnel": "ngrok http 3000",
-		"test:lint": "eslint .",
+		"test": "yarn test",
+		"test:lint": "eslint ./src",
 		"test:style": "stylelint \"**/*.scss\""
 	},
 	"keywords": [],
