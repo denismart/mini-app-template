@@ -60,11 +60,11 @@
 			},
 			{
 				"type": "rule",
-				"selector": "^&_"
+				"selector": "^."
 			},
 			{
 				"type": "rule",
-				"selector": "^."
+				"selector": "^&_"
 			},
 			"rules"
 		],

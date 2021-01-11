@@ -10,7 +10,8 @@
 		"build:dev": "cross-env-file -p ./.env.dev.json react-scripts build",
 		"deploy": "vk-miniapps-deploy",
 		"tunnel": "ngrok http 3000",
-		"test:lint": "eslint .",
+		"test": "yarn test",
+		"test:lint": "eslint ./src",
 		"test:style": "stylelint \"**/*.scss\""
 	},
 	"keywords": [],
@@ -42,6 +43,7 @@
 	"dependencies": {
 		"@vkontakte/icons": "^1.69.0",
 		"@vkontakte/vk-bridge": "^2.3.0",
+		"@vkontakte/vkjs": "^0.20.0",
 		"@vkontakte/vkui": "^4.0.3",
 		"axios": "^0.21.0",
 		"core-js": "^3.3.6",
